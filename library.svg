@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="330" viewBox="0 0 650 330">
+<rect width="650" height="330" rx="20" fill="#e8f1f8"/>
+<rect x="75" y="65" width="500" height="205" rx="8" fill="#173c66"/>
+<rect x="95" y="85" width="460" height="165" fill="#f8f5ed"/>
+<rect x="115" y="105" width="115" height="125" fill="#8fc3df"/>
+<rect x="267" y="105" width="115" height="125" fill="#8fc3df"/>
+<rect x="420" y="105" width="115" height="125" fill="#8fc3df"/>
+<path d="M90 65 L325 20 L560 65Z" fill="#c18a16"/>
+<rect x="295" y="180" width="60" height="70" fill="#173c66"/>
+<text x="325" y="300" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#173c66">UNIVERSITY LIBRARY</text>
+</svg>

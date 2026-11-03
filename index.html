@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET University - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home" class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <div class="brand-mark">K</div>
+                <div>
+                    <h1>KIET University</h1>
+                    <p>Learn Today. Lead Tomorrow.</p>
+                </div>
+            </div>
+            <button class="welcome-button" onclick="showWelcome()">Welcome Message</button>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#programs">Programs</a>
+            <a href="#admission">Admissions</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">WELCOME TO OUR CAMPUS</p>
+                    <h2>Build Your Future<br><span>With Knowledge</span></h2>
+                    <p>Discover your interests, learn new skills and prepare for a successful future in a friendly learning environment.</p>
+                    <a class="primary-link" href="#admission">Apply for Admission</a>
+                </div>
+                <img src="images/campus.svg" alt="Illustration of a university campus" class="hero-image">
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW US</p>
+                <h2>About Our University</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>Our university provides students with an opportunity to learn, explore ideas and develop useful skills. We focus on education, creativity, teamwork and personal growth.</p>
+                    <p>Students can choose from different academic departments and programs according to their interests and career goals.</p>
+                </div>
+                <img src="images/library.svg" alt="Illustration of a university library" class="about-image">
+            </div>
+        </section>
+
+        <section id="departments" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE YOUR INTERESTS</p>
+                    <h2>Our Departments</h2>
+                    <p>Choose a field that matches your interests.</p>
+                </div>
+                <ul class="department-list">
+                    <li>Computer Science</li>
+                    <li>Business Administration</li>
+                    <li>Electrical Engineering</li>
+                    <li>Software Engineering</li>
+                    <li>Media Sciences</li>
+                    <li>Mathematics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="programs" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">PLAN YOUR STUDIES</p>
+                <h2>Academic Programs</h2>
+                <p>Example programs and their study duration.</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Duration</th>
+                            <th>Degree Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>4 Years</td>
+                            <td>BS Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td>Business Administration</td>
+                            <td>4 Years</td>
+                            <td>BBA</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>4 Years</td>
+                            <td>BS Software Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Electrical Engineering</td>
+                            <td>4 Years</td>
+                            <td>BE Electrical Engineering</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="admission" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TAKE THE NEXT STEP</p>
+                    <h2>Admission Inquiry Form</h2>
+                    <p>Fill in the form to show your interest in a program.</p>
+                </div>
+                <form id="admissionForm" class="admission-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" name="contact" placeholder="03XX-XXXXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Select Program</label>
+                        <select id="program" name="program" required>
+                            <option value="">Choose a program</option>
+                            <option>BS Computer Science</option>
+                            <option>BBA</option>
+                            <option>BS Software Engineering</option>
+                            <option>BE Electrical Engineering</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Inquiry</button>
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h2>KIET University</h2>
+                <p>Learn Today. Lead Tomorrow.</p>
+            </div>
+            <p>© 2026 KIET University Student Website Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
